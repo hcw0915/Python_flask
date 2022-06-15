@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>default</title>
+    <style>
+      .com {
+        width: 600px;
+        height: 600px;
+        border: solid;
+        border-color: red;
+        border-radius: 10px;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      .search-bar {
+        font-size: 20px;  
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://127.0.0.1:3000/getSum">連結到網頁</a>
+    <a href="/getSum"></a> <!--如果是本機檔案室可以不用前面的網址的-->
+    <br>
+    <img src="thumbnail-2.webp" class="com">
+    <input class="search-bar" placeholder="Search">
+
+    <form action="/show" method="POST">
+      姓名 <input type="text" name="n">
+      <button>點擊送出表單</button>
+    </form>
+
+  </body>
+</html>
+
